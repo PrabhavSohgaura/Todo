@@ -1,0 +1,29 @@
+.todo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.todo__form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.todo__input {
+  width: 100%;
+  padding: 0.5rem;
+}
+.todo__button {
+  padding: 0.2rem;
+  cursor: pointer;
+}
+.todoInput__container {
+  margin-top: 2rem;
+  border: 1px solid black;
+  width: 45%;
+  padding: 0.5 rem;
+}
