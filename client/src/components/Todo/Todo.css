@@ -18,8 +18,9 @@
   padding: 0.5rem;
 }
 .todo__button {
-  padding: 0.2rem;
+  padding: 0.5rem;
   cursor: pointer;
+  margin-left: 2rem;
 }
 .todoInput__container {
   margin-top: 2rem;
