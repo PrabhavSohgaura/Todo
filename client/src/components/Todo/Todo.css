@@ -1,3 +1,7 @@
+:root {
+  --primary: #ffc636;
+  --secondary: #0a0b5b;
+}
 .todo__container {
   display: flex;
   justify-content: center;
@@ -14,13 +18,28 @@
 }
 
 .todo__input {
-  width: 100%;
-  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 2px solid #9893d8;
+  color: #222;
+  font-size: 1em;
 }
 .todo__button {
-  padding: 0.5rem;
-  cursor: pointer;
-  margin-left: 2rem;
+  background: none;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 6px 12px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  font-size: 1em;
+  margin-left: 5px;
+}
+.todo__button:hover {
+  color: #222;
+  background: var(--primary);
 }
 .todoInput__container {
   margin-top: 2rem;

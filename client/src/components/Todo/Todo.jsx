@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Todo.css";
-import TodoInput from "./TodoInput";
+import { useDispatch } from "react-redux";
+import { addToDO } from "../../features/TodoReducer";
 
 const Todo = () => {
   const [todo, setTodo] = useState({
     content: "",
     contentError: null,
   });
+
+  const dispatch = useDispatch();
 
   const handleChange = (e) => {
     setTodo({
@@ -22,6 +25,7 @@ const Todo = () => {
       setTodo({ ...todo, contentError: "Please write something" });
       return;
     }
+    dispatch(addToDO({ newContent: content }));
   };
 
   const { content, contentError } = todo;
