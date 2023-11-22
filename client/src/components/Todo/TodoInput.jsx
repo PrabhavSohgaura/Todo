@@ -1,11 +1,7 @@
 import React from "react";
 
-const TodoInput = () => {
-  return (
-    <div>
-      <h3>First todo!</h3>
-    </div>
-  );
+const TodoInput = ({ todo }) => {
+  return <div className="container">{todo}</div>;
 };
 
 export default TodoInput;

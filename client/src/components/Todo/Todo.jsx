@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Todo.css";
 import { useDispatch } from "react-redux";
 import { addToDO } from "../../features/TodoReducer";
+import TodoInput from "./TodoInput";
 
 const Todo = () => {
   const [todo, setTodo] = useState({
@@ -49,6 +50,7 @@ const Todo = () => {
       {contentError && (
         <div className="todoInput__container">{contentError}</div>
       )}
+      <TodoInput todo={todo} />
     </div>
   );
 };
