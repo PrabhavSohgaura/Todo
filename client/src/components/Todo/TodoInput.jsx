@@ -1,9 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
-const TodoInput = ({ todo }) => {
+const TodoInput = () => {
+  const todoInput = useSelector((state) => state.todoReducer);
   return (
     <div className="todo__Container">
-      <h1>{todo}</h1>
+      <h1>{todoInput}</h1>
       <button>Delete</button>
     </div>
   );

@@ -27,6 +27,7 @@ const Todo = () => {
       return;
     }
     dispatch(addToDO({ newContent: content }));
+    setTodo({ content: "" });
   };
 
   const { content, contentError } = todo;
@@ -50,7 +51,7 @@ const Todo = () => {
       {contentError && (
         <div className="todoInput__container">{contentError}</div>
       )}
-      <TodoInput todo={todo} />
+      <TodoInput />
     </div>
   );
 };
