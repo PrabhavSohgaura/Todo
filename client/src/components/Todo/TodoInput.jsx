@@ -1,11 +1,13 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const TodoInput = () => {
+  const dispatch = useDispatch();
   const todoInput = useSelector((state) => state.todoReducer);
 
   const handleTodo = (e) => {
     e.preventDefault();
+    dispatch({});
   };
   return (
     <div className="todo__Container">
