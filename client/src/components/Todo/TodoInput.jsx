@@ -7,7 +7,7 @@ const TodoInput = () => {
 
   const handleTodo = (e) => {
     e.preventDefault();
-    dispatch({});
+    dispatch({ type: "deleteTod" });
   };
   return (
     <div className="todo__Container">
