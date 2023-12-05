@@ -18,6 +18,9 @@ export const todoReducer = createSlice({
       };
       state.todoList.push(newTodoList);
     },
+    deleteTodo: (state, action) => {
+      return (state.todoList = state.todoList.id !== action.payload.id);
+    },
   },
 });
 
