@@ -23,7 +23,7 @@ const Todo = () => {
   const addTodo = () => {
     if (content === "") {
       alert("todo is empty");
-      setTodo({ ...todo, contentError: "Please write something!" });
+      setTodo({ ...todo, contentError: "Input is empty!" });
       return;
     }
     dispatch(addToDO({ newContent: content }));
